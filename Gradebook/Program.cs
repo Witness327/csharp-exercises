@@ -26,7 +26,7 @@ namespace Gradebook
             // Get student grades
             foreach (string student in students)
             {
-                Console.WriteLine("Grade for " + student + ": ");
+                Console.WriteLine($"Grade for {student}?");
                 double newGrade = double.Parse(Console.ReadLine());
                 grades.Add(newGrade);
             }
@@ -40,7 +40,7 @@ namespace Gradebook
 
             double sum = grades.Sum();
             double avg = sum / grades.Count;
-            Console.WriteLine("Average grade: " + avg);
+            Console.WriteLine($"Average class grade: {avg}%");
 
             Console.ReadLine();
         }
